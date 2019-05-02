@@ -20,10 +20,15 @@ const BACKDROP_SIZE = 'w1280'
 // w92, w154, w185, w342, w500, w780, original
 const POSTER_SIZE = 'w500'
 
+const POSTER_TITLE = "Ajani Goldmane";
+
+const POSTER_TEXT = "Ajani was born as an albino Nacatl, a stigma among his people described as \"white as death\", and so spent much of his youth as an outcast. "
 export {
   API_URL,
   API_KEY,
   IMAGE_BASE_URL,
   BACKDROP_SIZE,
-  POSTER_SIZE
+  POSTER_SIZE,
+  POSTER_TITLE,
+  POSTER_TEXT
 }

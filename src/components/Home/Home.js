@@ -5,7 +5,7 @@ import FourColGrid from '../elements/FourColGrid/FourColGrid';
 import MovieThumb from '../elements/MovieThumb/MovieThumb';
 import LoadMoreBtn from '../elements/LoadMoreBtn/LoadMoreBtn';
 import Spinner from '../elements/Spinner/Spinner';
-import { IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../config';
+import { IMAGE_BASE_URL, POSTER_SIZE, POSTER_TITLE, POSTER_TEXT } from '../../config';
 import './Home.css';
 
 const Home = ({ movies, heroImage, loading, currentPage, totalPages, searchTerm, searchMovies, loadMoreMovies }) => (
@@ -15,8 +15,8 @@ const Home = ({ movies, heroImage, loading, currentPage, totalPages, searchTerm,
       <div>
         <HeroImage
           image={"images/banner2.jpg"}
-          title={heroImage.original_title}
-          text={heroImage.overview}
+          title={POSTER_TITLE}
+          text={POSTER_TEXT}
         />
         <SearchBar callback={searchMovies} />
       </div> : null}
